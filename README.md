@@ -52,15 +52,17 @@ The system follows a modular pipeline architecture:
 
 ```mermaid
 graph TD
-    A(Manual Pipeline Execution) --> B(Scraper Module <br/> RSS/Reddit);
-    B --> C(NLP Processing Pipeline <br/> Sentiment, NER, Keywords);
-    C --> D[Data Storage <br/> (SQLite)];
-    D --> E(Analytics Engine <br/> Daily Trends);
+    A["Manual Pipeline Execution"] --> B["Scraper Module <br/> RSS/Reddit"];
+    B --> C["NLP Processing Pipeline <br/> Sentiment, NER, Keywords"];
+    C --> D["Data Storage <br/> (SQLite)"];
+    D --> E["Analytics Engine <br/> Daily Trends"];
     E --> D;
-    D --> F(Streamlit Dashboard <br/> Visualization);
+    D --> F["Streamlit Dashboard <br/> Visualization"];
+
     subgraph "Data Sources"
-        DS1[News RSS Feeds]
-        DS2[Reddit API]
+        DS1["News RSS Feeds"]
+        DS2["Reddit API"]
     end
+
     DS1 --> B;
     DS2 --> B;
