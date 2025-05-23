@@ -2,7 +2,7 @@
 
 This project implements an automated data pipeline that scrapes news articles and Reddit posts related to "Advancements in Renewable Energy Technologies." It then performs Natural Language Processing (NLP) to analyze sentiment, extract key entities and keywords, calculates daily trends, and visualizes these insights on an interactive Streamlit dashboard.
 
-**Live Demo:** [Link to your deployed Streamlit app - e.g., on Streamlit Community Cloud] *(Update this if you deploy it!)*
+**Live Demo:** https://renewable-energy-trend-analysis-svqeraef6ou49sjcrqrlbx.streamlit.app/
 
 ## Key Features
 
@@ -25,10 +25,6 @@ This project implements an automated data pipeline that scrapes news articles an
 * **Dashboarding:** `Streamlit`, `Plotly Express` (for charts)
 * **Development Environment:** Jupyter Notebooks
 
-## Skills Demonstrated
-
-This project showcases a range of skills relevant to data engineering, web programming, and machine learning:
-
 * **Web Scraping:** Developed Python scripts to collect and parse data from diverse online sources (RSS feeds, Reddit JSON endpoints), handling different HTML/XML structures and using libraries like `Requests`, `feedparser`, and `newspaper3k`.
 * **Natural Language Processing (NLP):** Implemented an NLP pipeline using `spaCy` for Named Entity Recognition and `VADER Sentiment` for robust sentiment analysis. Extracted meaningful keywords using `scikit-learn`'s `TfidfVectorizer`.
 * **Data Science & Data Analytics:** Performed trend analysis by aggregating processed data to calculate daily average sentiment scores, identify top keywords through frequency analysis, and determine emerging keywords by comparing daily sets. Utilized `Pandas` for data manipulation.
@@ -43,7 +39,7 @@ This project showcases a range of skills relevant to data engineering, web progr
     * Implemented polite scraping practices (e.g., user-agent, delays).
     * Focused on publicly available data.
 
-## Project Architecture (Conceptual)
+## Project Architecture
 
 The system follows a modular pipeline architecture:
 
